@@ -106,7 +106,7 @@ export const ToDoListFunction = (props) => {
 
 	return (
 		<ThemeProvider theme={themeToDoList}>
-			<Container className='w-50 mt-3'>
+			<Container className=' mt-3'>
 				<Dropdown
 					onChange={(e) => {
 						let { value } = e.target;
@@ -115,6 +115,7 @@ export const ToDoListFunction = (props) => {
 					{renderTheme()}
 				</Dropdown>
 				<Heading1>To Do List</Heading1>
+
 				<TextField
 					onChange={(e) => {
 						setTaskName(e.target.value);
@@ -124,6 +125,7 @@ export const ToDoListFunction = (props) => {
 					name='taskName'
 					className='w-50'
 				/>
+
 				<Button
 					className='ms-2'
 					disabled={disabledAdd}
@@ -139,6 +141,7 @@ export const ToDoListFunction = (props) => {
 					<i className='fa fa-plus me-2'></i>
 					Add task
 				</Button>
+
 				<Button
 					className='ms-2'
 					disabled={disabled}
@@ -150,6 +153,7 @@ export const ToDoListFunction = (props) => {
 					<i className='fa fa-upload me-2'></i>
 					Update task
 				</Button>
+
 				<hr />
 				<Heading3>Task to do</Heading3>
 				<Table>

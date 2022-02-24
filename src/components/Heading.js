@@ -7,6 +7,13 @@ export const Heading1 = styled.h1`
 	color: ${(props) => {
 		return props.theme.color;
 	}};
+
+	@media screen and (max-width: 768px) {
+		font-size: 3rem;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 2.5rem;
+	}
 `;
 
 export const Heading2 = styled.h2`
@@ -25,6 +32,12 @@ export const Heading3 = styled.h3`
 	color: ${(props) => {
 		return props.theme.color;
 	}};
+	@media screen and (max-width: 768px) {
+		font-size: 1.8rem;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 1.5rem;
+	}
 `;
 
 export const Heading4 = styled.h4`
